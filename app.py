@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 # 'NumDots', 'UrlLength', 'NumDash', 'AtSymbol', 'IpAddress', 'HttpsHostname', 'PathLength', 'NumChars', 'Phishing'
 
 # Cargar el modelo desde el archivo
-model_path = 'models/supervised/rfc_und.pkl'
+model_path = 'models/rfc_und.pkl'
 with open(model_path, 'rb') as file:
     model = pkl.load(file)
 
@@ -27,7 +27,7 @@ def preprocess_url(url):
     num_dots = url.count('.')
     url_length = len(url)
     num_dash = url.count('-')
-    at_symbol = 1 if '@' in url else 0
+    at_symbol = 1 if hostname is not None and 'https' in hostname else 0
     ip_address = has_ip_address(url)
     https_in_hostname = 1 if 'https' in hostname else 0
     path_length = len(path)
