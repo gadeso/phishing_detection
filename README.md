@@ -2,16 +2,14 @@
 
 #### 📖 Overview
 The Phishing Detection Web Application is an interactive tool developed to identify potentially fraudulent websites. Leveraging machine learning techniques, this application analyzes URLs to assess their likelihood of being phishing sites. Built with Streamlit, it offers a user-friendly interface for real-time URL analysis.
-Technical resentation: https://prezi.com/view/bxFXrHb94h3MX1WB0KqP/
-Bussines Presentation: https://prezi.com/view/6dGbMgl3lvisVwQGZ2sO/
+
+- Technical resentation: https://prezi.com/view/bxFXrHb94h3MX1WB0KqP/
+- Bussines Presentation: https://prezi.com/view/6dGbMgl3lvisVwQGZ2sO/
 
 #### 🛠 Features
 Interactive Interface: Easily enter and analyze URLs through a web-based interface.
 Machine Learning Model: Utilizes a Random Forest Classifier to predict phishing attempts.
 Real-Time Analysis: Provides instant feedback on the safety of entered URLs.
-
-#### 🚀 Getting Started
-Follow these instructions to set up and run the application on your local machine.
 
 #### Prerequisites
 Ensure you have the following installed:
@@ -21,33 +19,20 @@ pip (Python package installer)
 Installation
 Clone the Repository
 
-bash
-git clone https://github.com/your-username/phishing-detection-web-app.git
-cd phishing-detection-web-app
-Create a Virtual Environment
+#### 🚀 Getting Started
+Follow these instructions to set up and run the application on your local machine:
 
 bash
-python -m venv venv
-Windows:
+git clone [https://github.com/your-username/phishing-detection-web-app.git](https://github.com/gadeso/phishing_detection.git)
 
-bash
-venv\Scripts\activate
-macOS/Linux:
-
-bash
-source venv/bin/activate
-Install Dependencies
-
-bash
-pip install -r requirements.txt
-Running the Application
 Start the Streamlit Server
 
 bash
 streamlit run app.py
 Access the Web Interface
 
-Open your web browser and navigate to http://localhost:8501 to use the application.
+Or:
+Open your web browser and navigate to http://localhost:8501 to use the application once you've done the previous steps.
 
 #### 💻 Usage
 Enter a URL: In the input field on the web interface, type or paste the URL you want to check.
