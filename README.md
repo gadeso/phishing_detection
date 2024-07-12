@@ -2,7 +2,8 @@
 
 #### 📖 Overview
 The Phishing Detection Web Application is an interactive tool developed to identify potentially fraudulent websites. Leveraging machine learning techniques, this application analyzes URLs to assess their likelihood of being phishing sites. Built with Streamlit, it offers a user-friendly interface for real-time URL analysis.
-Presentation: https://prezi.com/view/bxFXrHb94h3MX1WB0KqP/
+Technical resentation: https://prezi.com/view/bxFXrHb94h3MX1WB0KqP/
+Bussines Presentation: https://prezi.com/view/6dGbMgl3lvisVwQGZ2sO/
 
 #### 🛠 Features
 Interactive Interface: Easily enter and analyze URLs through a web-based interface.
