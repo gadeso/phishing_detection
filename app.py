@@ -27,9 +27,9 @@ def preprocess_url(url):
     num_dots = url.count('.')
     url_length = len(url)
     num_dash = url.count('-')
-    at_symbol = 1 if hostname is not None and 'https' in hostname else 0
+    at_symbol = 1 if '@' in url else 0
     ip_address = has_ip_address(url)
-    https_in_hostname = 1 if 'https' in hostname else 0
+    https_in_hostname = 1 if hostname is not None and 'https' in hostname else 0
     path_length = len(path)
     num_numeric_chars = sum(c.isdigit() for c in url)
     
@@ -65,4 +65,4 @@ if url:
     prediction = predict(preprocessed_data)
     
     # Mostrar el resultado
-    st.write(f'La página es {"fraudulenta" if prediction == 0 else "legítima"}')
+    st.write(f'La página es {"fraudulenta" if round(prediction) == 1 else "legítima"}')
